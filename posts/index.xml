@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 驴行宁波</title>
+    <link>https://twinfohgj.github.io/hikingNingbo/posts/</link>
+    <description>Recent content in Posts on 驴行宁波</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twinfohgj.github.io/hikingNingbo/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>版本记录</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/posts/versionrecord/</link>
+      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://twinfohgj.github.io/hikingNingbo/posts/versionrecord/</guid>
+      <description>版本号：V1.0 1.提交日期：2022年3月19日 2.更新描述：以已有的奉化、鄞州、海曙、镇海、江北、北仑等县区资料为基础，推出宁波驴行电子</description>
+    </item>
+    
+    <item>
+      <title>活动剪影</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/posts/activitylist/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://twinfohgj.github.io/hikingNingbo/posts/activitylist/</guid>
+      <description>1.王玮.线性文化遗产的保护与利用[J].博物馆研究.2016(03)，79-86. 2.宁波市奉化区户外运动协会.奉化登山步道推介[OE/O</description>
+    </item>
+    
+    <item>
+      <title>参考文献</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/posts/references/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://twinfohgj.github.io/hikingNingbo/posts/references/</guid>
+      <description>1.王玮.线性文化遗产的保护与利用[J].博物馆研究.2016(03)，79-86. 2.宁波市奉化区户外运动协会.奉化登山步道推介[OE/O</description>
+    </item>
+    
+  </channel>
+</rss>
