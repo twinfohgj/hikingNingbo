@@ -80,30 +80,12 @@
 <br>
 
 </div>
-<div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script src="https://priesttomb.github.io/js/md5.min.js"></script>
-<script>
-  const gitalk = new Gitalk({
-    clientID: '72a68bf1914d1dd04d8b',
-    clientSecret: 'd7b84c3f6556e6d8e6f33428e43c5e8c5396edab',
-    repo: 'hikingComment',
-    owner: 'twinfohgj',
-    admin: ['twinfohgj'],
-    id: md5(location.pathname), 
-    distractionFreeMode: false, 
-    proxy: 'https://proxy.twinfo.workers.dev/?https://github.com/login/oauth/access_token' 
-  });
-
-  (function() {
-    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-      document.getElementById('gitalk-container').innerHTML = 'Gitalk评论区在本地预览时不可用.';
-      return;
-    }
-    gitalk.render('gitalk-container');
-  })();
- 
+<script src="https://utteranc.es/client.js"
+repo="twinfohgj.github.io/hikingComment"
+issue-term="title"
+theme="github-light"
+crossorigin="anonymous"
+async>
 </script>
 <nav class="pagination"><a class="nav nav-prev" href="https://twinfohgj.github.io/hikingNingbo/chapter3/3/" title="Chapter 3-3"><i class="fas fa-arrow-left" aria-hidden="true"></i>&nbsp;前一页 - Chapter 3-3</a>
 <a class="nav nav-next" href="https://twinfohgj.github.io/hikingNingbo/chapter4/" title="Chapter 4 (unlimited levels)">下一页 - Chapter 4 (unlimited levels) <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
