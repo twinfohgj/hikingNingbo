@@ -1,43 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>使用手册 on 驴行宁波</title>
+    <title>第12章 使用手册 on 驴行宁波</title>
     <link>https://twinfohgj.github.io/hikingNingbo/usermanual/</link>
-    <description>Recent content in 使用手册 on 驴行宁波</description>
+    <description>Recent content in 第12章 使用手册 on 驴行宁波</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 17 Oct 2020 15:26:15 +0000</lastBuildDate><atom:link href="https://twinfohgj.github.io/hikingNingbo/usermanual/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jul 2020 15:26:15 +0000</lastBuildDate><atom:link href="https://twinfohgj.github.io/hikingNingbo/usermanual/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello_world2</title>
-      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/hello_world2/</link>
-      <pubDate>Sun, 17 Dec 2017 14:00:45 +0000</pubDate>
+      <title>12.1 Android手机地图安装</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/121/</link>
+      <pubDate>Sat, 17 Oct 2020 14:00:45 +0000</pubDate>
       
-      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/hello_world2/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
+      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/121/</guid>
+      <description>12.1.1.安装OruxMaps 在Android系列机上，电子地图必须运行在OruxMaps软件上。该软件有开源版本，最高版本为7.4.2</description>
     </item>
     
     <item>
-      <title>Hello_world1</title>
-      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/hello_world1/</link>
-      <pubDate>Fri, 17 Nov 2017 14:00:45 +0000</pubDate>
+      <title>12.2 Garmin机地图安装</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/122/</link>
+      <pubDate>Tue, 17 Nov 2020 14:00:45 +0000</pubDate>
       
-      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/hello_world1/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
+      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/122/</guid>
+      <description>12.2.1.Garmin地图安装方式 将地图安装到Garmin机上有三种方式： 1.把gmapsupp.img文件直接拷贝到手持机TF卡的Ga</description>
     </item>
     
     <item>
-      <title>Hello_world</title>
-      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/hello_world/</link>
-      <pubDate>Tue, 17 Oct 2017 14:00:45 +0000</pubDate>
+      <title>12.3 OruxMaps软件使用初步</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/123/</link>
+      <pubDate>Tue, 17 Nov 2020 14:00:45 +0000</pubDate>
       
-      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/hello_world/</guid>
-      <description>aaaaaa
-vvvv
-aaa</description>
+      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/123/</guid>
+      <description>本地图与作者所撰写的《驴行宁波》系列文章结合使用效果最佳。 12.3.1.导入并管理已有轨迹 您可以根据《驴行宁波》文章中所提到的建议线路及轨迹</description>
+    </item>
+    
+    <item>
+      <title>12.4 地图相关参数</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/124/</link>
+      <pubDate>Tue, 17 Nov 2020 14:00:45 +0000</pubDate>
+      
+      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/124/</guid>
+      <description>本文配套地图使用相关参数如下： 12.4.1.坐标系 采用WGS 84（World Geodetic System）地理坐标系，使用Geographic (Latit</description>
+    </item>
+    
+    <item>
+      <title>12.5 图例</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/125/</link>
+      <pubDate>Tue, 17 Nov 2020 14:00:45 +0000</pubDate>
+      
+      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/125/</guid>
+      <description>本文文字说明中使用了两类图例，分别列于下表中。其中I类图例用于奉化、鄞州两地，其余地区均采用II类图例，海曙区兼用两类图例。 I类图例 II类图</description>
+    </item>
+    
+    <item>
+      <title>12.6 加速浏览方法</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/126/</link>
+      <pubDate>Tue, 17 Nov 2020 14:00:45 +0000</pubDate>
+      
+      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/126/</guid>
+      <description>本站站点架设在github开源项目上，有可能您在浏览时会出现网页打开速度缓慢现象。此时建议您采取以下几种方式加速打开网页。 12.6.1.使用</description>
+    </item>
+    
+    <item>
+      <title>12.7 总图查看方法</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/127/</link>
+      <pubDate>Tue, 17 Nov 2020 14:00:45 +0000</pubDate>
+      
+      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/127/</guid>
+      <description>本文为海曙区、鄞州区、江北区、镇海区、奉化区等区在“两步路”APP上提供了全区轨迹总图。但因软件开发商的原因，该图无法在PC机上某些浏览器下</description>
+    </item>
+    
+    <item>
+      <title>12.8 使用注意事项</title>
+      <link>https://twinfohgj.github.io/hikingNingbo/usermanual/128/</link>
+      <pubDate>Tue, 17 Nov 2020 14:00:45 +0000</pubDate>
+      
+      <guid>https://twinfohgj.github.io/hikingNingbo/usermanual/128/</guid>
+      <description>12.8.1.重要说明 文档中只给出经典的行走线路。实际上，围绕这些经典主干线路会有多条支线，或可穿越，或可（与公路等进行）搭配形成环线，有经</description>
     </item>
     
   </channel>

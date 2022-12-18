@@ -481,13 +481,7 @@ hr {
 
 p {
   font-size: 18px;
-  text-align: justify;
-  text-indent: 2em;
 }
-
-.block_1 {
-  text-indent: 0em;
-  }
 
 img {
   display: inline-block;
