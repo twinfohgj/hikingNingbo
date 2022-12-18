@@ -42,7 +42,7 @@
 <div class="global-menu">
 <nav>
 <ul>
-<li id="search" class=""><a href="/hikingNingbo/post/roadsearch">古道搜索</a></li>
+<li id="mytest" class=""><a href="/hikingNingbo/post/roadsearch/">古道搜索</a></li>
 <li class=""><a href="/hikingNingbo/post/navigation/">县区导航</a></li>
 <li class=""><a href="/hikingNingbo/post/activity/">活动剪影</a></li>
 <li id="userManual" class=""><a href="/hikingNingbo/usermanual/">使用手册</a></li>
@@ -53,16 +53,64 @@
 <div class="content-container">
 <main>
     <div class="my-container"><h1>古道搜索</h1><p>输入村名或地名，可快速搜索与其相关的古道和线路。</p>
-<script src=https://cdn.jsdelivr.net/npm/algoliasearch@4.0.0/dist/algoliasearch-lite.umd.js integrity="sha256-MfeKq2Aw9VAkaE9Caes2NOxQf6vUa8Av0JqcUXUGkd0=" crossorigin=anonymous></script>
-<script src=https://cdn.jsdelivr.net/npm/instantsearch.js@4.0.0/dist/instantsearch.production.min.js integrity="sha256-6S7q0JJs/Kx4kb/fv0oMjS855QTz5Rc2hh9AkIUjUsk=" crossorigin=anonymous></script>
-<script src=https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin=anonymous></script>
-<div id=searchbox></div>
-<div id=stats></div>
-<div id=hits></div>
-<div id=pagination></div>
-<script>var search=instantsearch({indexName:'hikingNingbo',searchClient:algoliasearch('NM4WXHJ9UZ','7671ae77d89f1c9e4c42e6fa494417dd'),routing:!0});const renderHits=(a,c)=>{const{hits:b}=a;document.querySelector('#hits').innerHTML=`
-    ${b.map(a=>`<div class="ais-Hits-item"><h3><a href="${a.permalink}">${a.title}</a></h3><p><span class="lastmod">${dayjs(a.lastmod).format("YYYY/MM/DD")}</span> - ${a.description?a.description:a.content.length>200?a.content.substring(0,200)+'...':a.content}</p></div>`).join('')}
-  `},customHits=instantsearch.connectors.connectHits(renderHits);search.addWidgets([instantsearch.widgets.searchBox({container:'#searchbox',showReset:!1}),instantsearch.widgets.stats({container:'#stats'}),customHits({container:document.querySelector('#hits')}),instantsearch.widgets.pagination({container:'#pagination',maxPages:20})]),search.start()</script>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.0/dist/algoliasearch-lite.umd.js" integrity="sha256-MfeKq2Aw9VAkaE9Caes2NOxQf6vUa8Av0JqcUXUGkd0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.0.0/dist/instantsearch.production.min.js" integrity="sha256-6S7q0JJs/Kx4kb/fv0oMjS855QTz5Rc2hh9AkIUjUsk=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+
+<div id="searchbox"></div>
+<div id="stats"></div>
+<div id="hits"></div>
+<div id="pagination"></div>
+
+<script>
+var search = instantsearch({
+  indexName: 'hikingNingbo',
+  searchClient: algoliasearch(
+    'NM4WXHJ9UZ',
+    '7671ae77d89f1c9e4c42e6fa494417dd'
+  ),
+  routing: true,
+});
+
+const renderHits = (renderOptions, isFirstRender) => {
+  const { hits } = renderOptions;
+
+  document.querySelector('#hits').innerHTML = `
+    ${hits
+      .map(
+        item =>
+          `<div class="ais-Hits-item"><h3><a href="${ item.permalink }">${ item.title }</a></h3><p><span class="lastmod">${ dayjs(item.lastmod).format("YYYY/MM/DD") }</span> - ${ item.description ? item.description : item.content.length > 200 ? item.content.substring( 0, 200 ) + '...' : item.content }</p></div>`
+      )
+      .join('')}
+  `;
+};
+
+const customHits = instantsearch.connectors.connectHits( renderHits );
+
+search.addWidgets([
+  instantsearch.widgets.searchBox({
+    container: '#searchbox',
+    showReset: false,
+  }),
+
+  instantsearch.widgets.stats({
+    container: '#stats',
+  }),
+
+  customHits({
+    container: document.querySelector('#hits'),
+  }),
+
+  instantsearch.widgets.pagination({
+    container: '#pagination',
+    maxPages: 20,
+  })
+]);
+
+search.start();
+
+</script>
+
 <div class="edit-meta"><p class="p1"><span class="s1"> </span><span class="s2">更新日期：</span><span class="s1"> 2022-11-30  </span></span></p>
 <p class="p1"><span class="s2">发布日期：</span><span class="s1"> 2022-11-30</span></span></p>
 </div><p class="powered">作者： 一壶浊酒</p>
