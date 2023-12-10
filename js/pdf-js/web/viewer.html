@@ -36,18 +36,22 @@ See https://github.com/adobe-type-tools/cmap-resources
 
   <script src="viewer.mjs" type="module"></script>
   <script>
-    function myOnkeydown(event) {
-            event.preventDefault(); // 阻止默认事件行为
-            event.keyCode=0;
-            window.event.returnValue = false;
-    }
+    window.onload = function(){
+    //屏蔽键盘事件
+     document.onkeydown = function (){
+         var e = window.event || arguments[0];
+         e.preventDefault(); // 阻止默认事件行为
+         e.returnValue = false;
+         return false;
+     };
+  }
     </script>
   </head>
 
   <body tabindex="1" oncontextmenu="window.event.returnValue=false"
   oncopy="window.event.returnValue=false"
   ondragstart  ="window.event.returnValue=false"
-  onselectstart="window.event.returnValue=false" onkeydown ="myOnkeydown(event)">
+  onselectstart="window.event.returnValue=false" >
     <div id="outerContainer">
 
       <div id="sidebarContainer">
