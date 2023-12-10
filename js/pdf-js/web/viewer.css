@@ -1088,9 +1088,11 @@
 
 .annotationEditorLayer .freeTextEditor .internal:focus{
   outline:none;
-  -webkit-user-select:auto;
-     -moz-user-select:auto;
-          user-select:auto;
+
+/*  修改  */
+  -webkit-user-select:none;
+     -moz-user-select:none;
+          user-select:none;
 }
 
 .annotationEditorLayer .inkEditor{
