@@ -12966,6 +12966,9 @@ class SecondaryToolbar {
       close,
       eventDetails
     } of this.buttons) {
+
+      if (eventName=='openfile' || eventName=='print' || eventName=='download') {return false;}
+
       element.addEventListener("click", evt => {
         if (eventName !== null) {
           this.eventBus.dispatch(eventName, {
@@ -13881,6 +13884,9 @@ class Toolbar {
       eventName,
       eventDetails
     } of this.buttons) {
+
+      if (eventName=='openfile' || eventName=='print' || eventName=='download') {return false;}
+
       element.addEventListener("click", evt => {
         if (eventName !== null) {
           this.eventBus.dispatch(eventName, {
