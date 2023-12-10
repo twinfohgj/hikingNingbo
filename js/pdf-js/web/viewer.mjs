@@ -2610,7 +2610,9 @@ const PDFViewerApplication = {
     const workerParams = _app_options_js__WEBPACK_IMPORTED_MODULE_2__.AppOptions.getAll(_app_options_js__WEBPACK_IMPORTED_MODULE_2__.OptionKind.WORKER);
     Object.assign(pdfjs_lib__WEBPACK_IMPORTED_MODULE_1__.GlobalWorkerOptions, workerParams);
     if (args.url) {
-      this.setTitleUsingUrl(args.originalUrl || args.url, args.url);
+
+      this.setTitleUsingUrl("OruxMaps10.1.8使用手册");
+      // this.setTitleUsingUrl(args.originalUrl || args.url, args.url);
     }
     const apiParams = _app_options_js__WEBPACK_IMPORTED_MODULE_2__.AppOptions.getAll(_app_options_js__WEBPACK_IMPORTED_MODULE_2__.OptionKind.API);
     const loadingTask = (0,pdfjs_lib__WEBPACK_IMPORTED_MODULE_1__.getDocument)({
@@ -4513,7 +4515,7 @@ const defaultOptions = {
 }
 {
   defaultOptions.defaultUrl = {
-    value: "compressed.tracemonkey-pldi-09.pdf",
+    value: "compressedtracemonkey-pldi-09.pdf",
     kind: OptionKind.VIEWER
   };
   defaultOptions.disablePreferences = {

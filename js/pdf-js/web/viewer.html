@@ -36,7 +36,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
   <script src="viewer.mjs" type="module"></script>
   <script>
-    document.onkeydown = document.onkeyup = document.onkeypress = function (event) {
+    function myOnkeydown(event) {
             event.preventDefault(); // 阻止默认事件行为
             event.keyCode=0;
             window.event.returnValue = false;
@@ -47,7 +47,7 @@ See https://github.com/adobe-type-tools/cmap-resources
   <body tabindex="1" oncontextmenu="window.event.returnValue=false"
   oncopy="window.event.returnValue=false"
   ondragstart  ="window.event.returnValue=false"
-  onselectstart="window.event.returnValue=false">
+  onselectstart="window.event.returnValue=false" onkeydown ="myOnkeydown(event)">
     <div id="outerContainer">
 
       <div id="sidebarContainer">
