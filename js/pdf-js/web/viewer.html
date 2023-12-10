@@ -35,7 +35,13 @@ See https://github.com/adobe-type-tools/cmap-resources
     <link rel="stylesheet" href="viewer.css">
 
   <script src="viewer.mjs" type="module"></script>
-
+  <script>
+    document.onkeydown = document.onkeyup = document.onkeypress = function (event) {
+            event.preventDefault(); // 阻止默认事件行为
+            event.keyCode=0;
+            window.event.returnValue = false;
+    }
+    </script>
   </head>
 
   <body tabindex="1" oncontextmenu="window.event.returnValue=false"
