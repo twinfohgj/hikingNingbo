@@ -30,17 +30,21 @@ See https://github.com/adobe-type-tools/cmap-resources
 <!-- This snippet is used in production (included from viewer.html) -->
 <link rel="resource" type="application/l10n" href="locale/locale.json">
 <script>
-  function onBodyLoad()
+function onBodyLoad()
   {
       var appConfig = PDFViewerApplication.appConfig;
       appConfig.toolbar.viewBookmark.setAttribute('hidden', 'true');
-     appConfig.secondaryToolbar.viewBookmarkButton.setAttribute('hidden', 'true');
+      appConfig.secondaryToolbar.viewBookmarkButton.setAttribute('hidden', 'true');
       appConfig.toolbar.openFile.setAttribute('hidden', 'true');
       appConfig.secondaryToolbar.openFileButton.setAttribute('hidden', 'true');
       appConfig.toolbar.download.setAttribute('hidden', 'true');
       appConfig.secondaryToolbar.downloadButton.setAttribute('hidden', 'true');
       appConfig.toolbar.print.setAttribute('hidden', 'true');
       appConfig.secondaryToolbar.printButton.setAttribute('hidden', 'true');
+      window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+            event.preventDefault(); // 阻止默认事件行为
+            window.event.returnValue = false;
+    }
   }
   </script>
 <script src="../build/pdf.mjs" type="module"></script>
@@ -48,15 +52,13 @@ See https://github.com/adobe-type-tools/cmap-resources
     <link rel="stylesheet" href="viewer.css">
 
   <script src="viewer.mjs" type="module"></script>
-  <script>
-    window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
-            event.preventDefault(); // 阻止默认事件行为
-            window.event.returnValue = false;
-    }
-    </script>
+
   </head>
 
-  <body tabindex="1" onload="onBodyLoad() >
+  <body tabindex="1" onload="onBodyLoad()" oncontextmenu="window.event.returnValue=false"
+  oncopy="window.event.returnValue=false"
+  ondragstart  ="window.event.returnValue=false"
+  onselectstart="window.event.returnValue=false">
     <div id="outerContainer">
 
       <div id="sidebarContainer">
