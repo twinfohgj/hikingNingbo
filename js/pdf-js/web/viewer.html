@@ -25,7 +25,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="google" content="notranslate">
-    <title>PDF.js viewer</title>
+    <title>PDF浏览器</title>
 
 <!-- This snippet is used in production (included from viewer.html) -->
 <link rel="resource" type="application/l10n" href="locale/locale.json">
@@ -44,16 +44,16 @@ See https://github.com/adobe-type-tools/cmap-resources
           <div id="toolbarSidebarLeft">
             <div id="sidebarViewButtons" class="splitToolbarButton toggled" role="radiogroup">
               <button id="viewThumbnail" class="toolbarButton toggled" title="Show Thumbnails" tabindex="2" data-l10n-id="pdfjs-thumbs-button" role="radio" aria-checked="true" aria-controls="thumbnailView">
-                 <span data-l10n-id="pdfjs-thumbs-button-label">Thumbnails</span>
+                 <span data-l10n-id="pdfjs-thumbs-button-label">缩略图</span>
               </button>
-              <button id="viewOutline" class="toolbarButton" title="Show Document Outline (double-click to expand/collapse all items)" tabindex="3" data-l10n-id="pdfjs-document-outline-button" role="radio" aria-checked="false" aria-controls="outlineView">
-                 <span data-l10n-id="pdfjs-document-outline-button-label">Document Outline</span>
+              <button id="viewOutline" class="toolbarButton" title="显示文档大纲 (双击可展开/折叠所有项目)" tabindex="3" data-l10n-id="pdfjs-document-outline-button" role="radio" aria-checked="false" aria-controls="outlineView">
+                 <span data-l10n-id="pdfjs-document-outline-button-label">文档大纲</span>
               </button>
-              <button id="viewAttachments" class="toolbarButton" title="Show Attachments" tabindex="4" data-l10n-id="pdfjs-attachments-button" role="radio" aria-checked="false" aria-controls="attachmentsView">
-                 <span data-l10n-id="pdfjs-attachments-button-label">Attachments</span>
+              <button id="viewAttachments" class="toolbarButton" title="显示附件" tabindex="4" data-l10n-id="pdfjs-attachments-button" role="radio" aria-checked="false" aria-controls="attachmentsView">
+                 <span data-l10n-id="pdfjs-attachments-button-label">附件</span>
               </button>
-              <button id="viewLayers" class="toolbarButton" title="Show Layers (double-click to reset all layers to the default state)" tabindex="5" data-l10n-id="pdfjs-layers-button" role="radio" aria-checked="false" aria-controls="layersView">
-                 <span data-l10n-id="pdfjs-layers-button-label">Layers</span>
+              <button id="viewLayers" class="toolbarButton" title="显示图层(双击可将所有图层重置为默认状态)" tabindex="5" data-l10n-id="pdfjs-layers-button" role="radio" aria-checked="false" aria-controls="layersView">
+                 <span data-l10n-id="pdfjs-layers-button-label">图层</span>
               </button>
             </div>
           </div>
@@ -85,30 +85,30 @@ See https://github.com/adobe-type-tools/cmap-resources
         <div class="findbar hidden doorHanger" id="findbar">
           <div id="findbarInputContainer">
             <span class="loadingInput end">
-              <input id="findInput" class="toolbarField" title="Find" placeholder="Find in document…" tabindex="91" data-l10n-id="pdfjs-find-input" aria-invalid="false">
+              <input id="findInput" class="toolbarField" title="查找" placeholder="在文档中查找…" tabindex="91" data-l10n-id="pdfjs-find-input" aria-invalid="false">
             </span>
             <div class="splitToolbarButton">
-              <button id="findPrevious" class="toolbarButton" title="Find the previous occurrence of the phrase" tabindex="92" data-l10n-id="pdfjs-find-previous-button">
-                <span data-l10n-id="pdfjs-find-previous-button-label">Previous</span>
+              <button id="findPrevious" class="toolbarButton" title="查找上一次出现的短语" tabindex="92" data-l10n-id="pdfjs-find-previous-button">
+                <span data-l10n-id="pdfjs-find-previous-button-label">上一页</span>
               </button>
               <div class="splitToolbarButtonSeparator"></div>
-              <button id="findNext" class="toolbarButton" title="Find the next occurrence of the phrase" tabindex="93" data-l10n-id="pdfjs-find-next-button">
-                <span data-l10n-id="pdfjs-find-next-button-label">Next</span>
+              <button id="findNext" class="toolbarButton" title="查找下一次出现的短语" tabindex="93" data-l10n-id="pdfjs-find-next-button">
+                <span data-l10n-id="pdfjs-find-next-button-label">下一页</span>
               </button>
             </div>
           </div>
 
           <div id="findbarOptionsOneContainer">
             <input type="checkbox" id="findHighlightAll" class="toolbarField" tabindex="94">
-            <label for="findHighlightAll" class="toolbarLabel" data-l10n-id="pdfjs-find-highlight-checkbox">Highlight All</label>
+            <label for="findHighlightAll" class="toolbarLabel" data-l10n-id="pdfjs-find-highlight-checkbox">高亮所有</label>
             <input type="checkbox" id="findMatchCase" class="toolbarField" tabindex="95">
-            <label for="findMatchCase" class="toolbarLabel" data-l10n-id="pdfjs-find-match-case-checkbox-label">Match Case</label>
+            <label for="findMatchCase" class="toolbarLabel" data-l10n-id="pdfjs-find-match-case-checkbox-label">匹配模式</label>
           </div>
           <div id="findbarOptionsTwoContainer">
             <input type="checkbox" id="findMatchDiacritics" class="toolbarField" tabindex="96">
-            <label for="findMatchDiacritics" class="toolbarLabel" data-l10n-id="pdfjs-find-match-diacritics-checkbox-label">Match Diacritics</label>
+            <label for="findMatchDiacritics" class="toolbarLabel" data-l10n-id="pdfjs-find-match-diacritics-checkbox-label">匹配字典</label>
             <input type="checkbox" id="findEntireWord" class="toolbarField" tabindex="97">
-            <label for="findEntireWord" class="toolbarLabel" data-l10n-id="pdfjs-find-entire-word-checkbox-label">Whole Words</label>
+            <label for="findEntireWord" class="toolbarLabel" data-l10n-id="pdfjs-find-entire-word-checkbox-label">完整单词</label>
           </div>
 
           <div id="findbarMessageContainer" aria-live="polite">
@@ -120,11 +120,11 @@ See https://github.com/adobe-type-tools/cmap-resources
         <div class="editorParamsToolbar hidden doorHangerRight" id="editorFreeTextParamsToolbar">
           <div class="editorParamsToolbarContainer">
             <div class="editorParamsSetter">
-              <label for="editorFreeTextColor" class="editorParamsLabel" data-l10n-id="pdfjs-editor-free-text-color-input">Color</label>
+              <label for="editorFreeTextColor" class="editorParamsLabel" data-l10n-id="pdfjs-editor-free-text-color-input">颜色</label>
               <input type="color" id="editorFreeTextColor" class="editorParamsColor" tabindex="100">
             </div>
             <div class="editorParamsSetter">
-              <label for="editorFreeTextFontSize" class="editorParamsLabel" data-l10n-id="pdfjs-editor-free-text-size-input">Size</label>
+              <label for="editorFreeTextFontSize" class="editorParamsLabel" data-l10n-id="pdfjs-editor-free-text-size-input">大小</label>
               <input type="range" id="editorFreeTextFontSize" class="editorParamsSlider" value="10" min="5" max="100" step="1" tabindex="101">
             </div>
           </div>
@@ -133,15 +133,15 @@ See https://github.com/adobe-type-tools/cmap-resources
         <div class="editorParamsToolbar hidden doorHangerRight" id="editorInkParamsToolbar">
           <div class="editorParamsToolbarContainer">
             <div class="editorParamsSetter">
-              <label for="editorInkColor" class="editorParamsLabel" data-l10n-id="pdfjs-editor-ink-color-input">Color</label>
+              <label for="editorInkColor" class="editorParamsLabel" data-l10n-id="pdfjs-editor-ink-color-input">颜色</label>
               <input type="color" id="editorInkColor" class="editorParamsColor" tabindex="102">
             </div>
             <div class="editorParamsSetter">
-              <label for="editorInkThickness" class="editorParamsLabel" data-l10n-id="pdfjs-editor-ink-thickness-input">Thickness</label>
+              <label for="editorInkThickness" class="editorParamsLabel" data-l10n-id="pdfjs-editor-ink-thickness-input">粗细</label>
               <input type="range" id="editorInkThickness" class="editorParamsSlider" value="1" min="1" max="20" step="1" tabindex="103">
             </div>
             <div class="editorParamsSetter">
-              <label for="editorInkOpacity" class="editorParamsLabel" data-l10n-id="pdfjs-editor-ink-opacity-input">Opacity</label>
+              <label for="editorInkOpacity" class="editorParamsLabel" data-l10n-id="pdfjs-editor-ink-opacity-input">不透明度</label>
               <input type="range" id="editorInkOpacity" class="editorParamsSlider" value="100" min="1" max="100" step="1" tabindex="104">
             </div>
           </div>
@@ -149,43 +149,43 @@ See https://github.com/adobe-type-tools/cmap-resources
 
         <div class="editorParamsToolbar hidden doorHangerRight" id="editorStampParamsToolbar">
           <div class="editorParamsToolbarContainer">
-            <button id="editorStampAddImage" class="secondaryToolbarButton" title="Add image" tabindex="105" data-l10n-id="pdfjs-editor-stamp-add-image-button">
-              <span data-l10n-id="pdfjs-editor-stamp-add-image-button-label">Add image</span>
+            <button id="editorStampAddImage" class="secondaryToolbarButton" title="添加图片" tabindex="105" data-l10n-id="pdfjs-editor-stamp-add-image-button">
+              <span data-l10n-id="pdfjs-editor-stamp-add-image-button-label">添加图片</span>
             </button>
           </div>
         </div>
 
         <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
           <div id="secondaryToolbarButtonContainer">
-            <button id="secondaryOpenFile" class="secondaryToolbarButton" title="Open File" tabindex="51" data-l10n-id="pdfjs-open-file-button">
-              <span data-l10n-id="pdfjs-open-file-button-label">Open</span>
+            <button id="secondaryOpenFile" class="secondaryToolbarButton" title="打开文件" tabindex="51" data-l10n-id="pdfjs-open-file-button">
+              <span data-l10n-id="pdfjs-open-file-button-label">打开</span>
             </button>
 
-            <button id="secondaryPrint" class="secondaryToolbarButton visibleMediumView" title="Print" tabindex="52" data-l10n-id="pdfjs-print-button">
-              <span data-l10n-id="pdfjs-print-button-label">Print</span>
+            <button id="secondaryPrint" class="secondaryToolbarButton visibleMediumView" title="打印" tabindex="52" data-l10n-id="pdfjs-print-button">
+              <span data-l10n-id="pdfjs-print-button-label">打印</span>
             </button>
 
-            <button id="secondaryDownload" class="secondaryToolbarButton visibleMediumView" title="Save" tabindex="53" data-l10n-id="pdfjs-save-button">
-              <span data-l10n-id="pdfjs-save-button-label">Save</span>
+            <button id="secondaryDownload" class="secondaryToolbarButton visibleMediumView" title="保存" tabindex="53" data-l10n-id="pdfjs-save-button">
+              <span data-l10n-id="pdfjs-save-button-label">保存</span>
             </button>
 
             <div class="horizontalToolbarSeparator"></div>
 
-            <button id="presentationMode" class="secondaryToolbarButton" title="Switch to Presentation Mode" tabindex="54" data-l10n-id="pdfjs-presentation-mode-button">
-              <span data-l10n-id="pdfjs-presentation-mode-button-label">Presentation Mode</span>
+            <button id="presentationMode" class="secondaryToolbarButton" title="切换至演示模式" tabindex="54" data-l10n-id="pdfjs-presentation-mode-button">
+              <span data-l10n-id="pdfjs-presentation-mode-button-label">演示模式</span>
             </button>
 
-            <a href="#" id="viewBookmark" class="secondaryToolbarButton" title="Current Page (View URL from Current Page)" tabindex="55" data-l10n-id="pdfjs-bookmark-button">
-              <span data-l10n-id="pdfjs-bookmark-button-label">Current Page</span>
+            <a href="#" id="viewBookmark" class="secondaryToolbarButton" title="当前页 (查看当前页URL)" tabindex="55" data-l10n-id="pdfjs-bookmark-button">
+              <span data-l10n-id="pdfjs-bookmark-button-label">当前页</span>
             </a>
 
             <div id="viewBookmarkSeparator" class="horizontalToolbarSeparator"></div>
 
-            <button id="firstPage" class="secondaryToolbarButton" title="Go to First Page" tabindex="56" data-l10n-id="pdfjs-first-page-button">
-              <span data-l10n-id="pdfjs-first-page-button-label">Go to First Page</span>
+            <button id="firstPage" class="secondaryToolbarButton" title="到首页" tabindex="56" data-l10n-id="pdfjs-first-page-button">
+              <span data-l10n-id="pdfjs-first-page-button-label">到首页</span>
             </button>
-            <button id="lastPage" class="secondaryToolbarButton" title="Go to Last Page" tabindex="57" data-l10n-id="pdfjs-last-page-button">
-              <span data-l10n-id="pdfjs-last-page-button-label">Go to Last Page</span>
+            <button id="lastPage" class="secondaryToolbarButton" title="到尾页" tabindex="57" data-l10n-id="pdfjs-last-page-button">
+              <span data-l10n-id="pdfjs-last-page-button-label">到尾页</span>
             </button>
 
             <div class="horizontalToolbarSeparator"></div>
