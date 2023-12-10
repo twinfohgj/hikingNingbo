@@ -29,24 +29,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 <!-- This snippet is used in production (included from viewer.html) -->
 <link rel="resource" type="application/l10n" href="locale/locale.json">
-<script>
-function onBodyLoad()
-  {
-      var appConfig = PDFViewerApplication.appConfig;
-      appConfig.toolbar.viewBookmark.setAttribute('hidden', 'true');
-      appConfig.secondaryToolbar.viewBookmarkButton.setAttribute('hidden', 'true');
-      appConfig.toolbar.openFile.setAttribute('hidden', 'true');
-      appConfig.secondaryToolbar.openFileButton.setAttribute('hidden', 'true');
-      appConfig.toolbar.download.setAttribute('hidden', 'true');
-      appConfig.secondaryToolbar.downloadButton.setAttribute('hidden', 'true');
-      appConfig.toolbar.print.setAttribute('hidden', 'true');
-      appConfig.secondaryToolbar.printButton.setAttribute('hidden', 'true');
-      window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
-            event.preventDefault(); // 阻止默认事件行为
-            window.event.returnValue = false;
-    }
-  }
-  </script>
+
 <script src="../build/pdf.mjs" type="module"></script>
 
     <link rel="stylesheet" href="viewer.css">
@@ -55,7 +38,7 @@ function onBodyLoad()
 
   </head>
 
-  <body tabindex="1" onload="onBodyLoad()" oncontextmenu="window.event.returnValue=false"
+  <body tabindex="1" oncontextmenu="window.event.returnValue=false"
   oncopy="window.event.returnValue=false"
   ondragstart  ="window.event.returnValue=false"
   onselectstart="window.event.returnValue=false">
@@ -178,7 +161,8 @@ function onBodyLoad()
         </div>
 
         <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
-          <div id="secondaryToolbarButtonContainer">
+          <!--
+          <div id="secondaryToolbarButtonContainer" >
             <button id="secondaryOpenFile" class="secondaryToolbarButton" title="Open File" tabindex="51" data-l10n-id="pdfjs-open-file-button">
               <span data-l10n-id="pdfjs-open-file-button-label">Open</span>
             </button>
@@ -192,6 +176,7 @@ function onBodyLoad()
             </button>
 
             <div class="horizontalToolbarSeparator"></div>
+            -->
 
             <button id="presentationMode" class="secondaryToolbarButton" title="Switch to Presentation Mode" tabindex="54" data-l10n-id="pdfjs-presentation-mode-button">
               <span data-l10n-id="pdfjs-presentation-mode-button-label">Presentation Mode</span>
